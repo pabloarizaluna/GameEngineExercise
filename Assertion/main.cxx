@@ -1,4 +1,3 @@
-#include <iostream>
 #define _ASSERT_GLUE(a, b) a ## b
 #define ASSERT_GLUE(a, b) _ASSERT_GLUE(a, b)
 
@@ -10,8 +9,7 @@
     }
 
 int main() {
-    std::cout << "Hello world\n";
     STATIC_ASSERT(sizeof(int) == 4);
-    //STATIC_ASSERT(sizeof(float) == 1);
+    STATIC_ASSERT(sizeof(float) == 1);
     return 0;
 }
